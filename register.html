@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: paleturquoise;
+            padding: 20px;
+        }
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            background-color:cyan;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sher{
+            padding: 25px;
+            gap: 77px;
+        }
+        input[type=email], input[type=password] {
+            width: 650px;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #f90000;
+            border-radius: 4px;
+        }
+        input[type="password"]:focus{
+color: rgb(41, 4, 246);
+background-color: bisque;
+        }
+        input[type="email"]:focus{
+            color: rgb(234, 246, 4);
+            background-color: rgb(242, 142, 205);
+                    }
+        button {
+            width: 50%;
+            background-color: #fb66b8;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6f4bdb;
+        }
+        .race{
+            color: #f29b05;
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+      #an:hover{
+            color: #1be8c9;
+        }
+            
+        #an:visited{
+           color: rgb(50, 195, 24);
+        }
+        .w{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+   
+    
+    <div class="container">
+        <h1>Register</h1>
+        <br>
+        <h4>Please fill in this form to create an account</h4>
+        <br>
+        <br>
+       
+        <form name="register" action="/register.html" method="post">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+<div class="signin">
+ <p>by creating account you agree to our <a id="an" href="tc.html">Terms & conditions</a> </p>
+<br>
+<br>
+ <hr>
+</div>
+            
+            
+            <div class="sher" style="display: flex;">  
+                <!-- <button>Button 1</button>   -->
+                <!-- <button>Button 2</button>   -->
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+                
+            </div>
+            <div class="w" >
+                <p>Already have an account? <a class="race" href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
